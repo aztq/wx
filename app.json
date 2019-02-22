@@ -1,12 +1,40 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/all/all",
+    "pages/where/where",
+    "pages/love/love"
   ],
+  "tabBar": {
+    "list": [
+      { "iconPath":"resources/recommend.png",
+        "selectedIconPath": "resources/recommend.png",
+        "pagePath": "pages/index/index",
+        "text": "当季推荐" 
+      },
+      {"iconPath": "resources/list.png",
+      "selectedIconPath": "resources/list.png",
+        "pagePath": "pages/all/all",
+        "text": "全部列表"
+      },
+      {"iconPath": "resources/location.png",
+      "selectedIconPath": "resources/location.png",
+        "pagePath": "pages/where/where",
+        "text": "位置"
+      },
+      {
+        "iconPath": "resources/favourite.png",
+        "selectedIconPath": "resources/favourite.png",
+        "pagePath": "pages/love/love",
+        "text": "love"
+      }
+    ],
+    "selectedColor": "#ff0033"
+  },
   "window":{
-    "backgroundTextStyle":"light",
+    "backgroundTextStyle":"dark",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "水果小店",
     "navigationBarTextStyle":"black"
   },
   "permission": {

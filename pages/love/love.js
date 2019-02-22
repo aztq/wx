@@ -1,21 +1,12 @@
 Page({
+
   /**
    * 页面的初始数据
    */
   data: {
-    content:[
-      { kind: '苹果', price: '￥5/斤', type:'新疆'},
-      { kind: '苹果', price: '￥5/斤', type:'新疆'},
-      { kind: '苹果', price: '￥5/斤', type:'新疆'},
-      { kind: '苹果', price: '￥5/斤', type:'新疆'},
-    ]
+    
   },
-  toast(){
-    //显示弹窗
-    wx.showToast({
-      "title":"omg"
-    })
-  },
+
   /**
    * 生命周期函数--监听页面加载
    */
@@ -69,14 +60,6 @@ Page({
    * 用户点击右上角分享
    */
   onShareAppMessage: function () {
-      //if (res.from === 'button') {
-      //  // 来自页面内转发按钮
-      //  console.log(res.target)
-      //}
-      return {
-        title: '水果小店',
-        path: '/pages/index/index',
-        imageUrl: '/resources/star.png'
-      }
+    
   }
 })
