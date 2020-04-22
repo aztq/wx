@@ -1,0 +1,14 @@
+<view class='title'>
+  <text>改进留言板</text>
+</view>
+
+<view wx:for='{{historyContent}}' class='history' wx:key='index'>
+  <text>{{item.content}}</text>
+</view>
+
+<view>
+  <input class='in-container' bindinput="getInput" value="{{telValue}}"></input>
+</view>
+
+
+<button bindtap="submit">提交</button>

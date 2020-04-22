@@ -1,8 +1,13 @@
 <view class='container'>
-  <view class='single'>
-    <view wx:for='{{content}}' wx:key="index" bindtap='toast'>
-    <image src='/resources/location.png'></image>
-    <view class='text'><text>{{item.kind}}</text></view>
+<button>asda</button>
+<text class='tip'>注：优惠商品有时间期限，详情可咨询VX1234567888,以商家回复为主</text>
+  <view class='single' wx:for='{{content}}' wx:key="index">
+    <view  data-kind="{{item.kind}}" bindtap='showDetail'>
+      <image class='fruitSrc' src='{{item.src}}'></image>
+      <view class='text'>
+        <text class='type'>{{item.kind}}</text>
+        <text class='price'>{{item.price}}</text>
+      </view>
     </view>
   </view>
 </view>

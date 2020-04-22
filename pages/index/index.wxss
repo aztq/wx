@@ -1,8 +1,14 @@
-image{
+.tip{
+  font-size:30rpx;
+}
+.fruitSrc{
   width:100%;
-  height:300rpx;
-  background:black;
+  height:400rpx;
 }
 .text{
   text-align:center;
+  padding:5px 0;
+}
+.text text{
+  margin-right:50rpx;
 }

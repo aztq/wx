@@ -1,0 +1,18 @@
+.title{
+  text-align:center;
+  padding:10rpx;
+}
+
+.history{
+  padding:0 20rpx;
+}
+
+.in-container{
+  padding:20rpx;
+  margin:10rpx 0;
+}
+input{
+  border:1rpx solid black;
+  border-radius: 10rpx;
+  padding:10rpx;
+}

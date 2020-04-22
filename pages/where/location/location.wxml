@@ -1,0 +1,15 @@
+<view class="container">
+  <map
+  id="map"
+  longitude="{{longitude}}"
+  latitude="{{latitude}}"
+  scale="18"
+  controls="{{controls}}"
+  bindcontroltap='reset'
+  polyline="{{polyline}}"
+  show-location>
+  </map>
+</view>
+
+
+<!-->latitude: 31.087, longitude: 121.475448<-->

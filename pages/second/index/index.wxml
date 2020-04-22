@@ -1,0 +1,83 @@
+<!-- 
+轮播图
+ -->
+<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}">
+  <block wx:for="{{imgUrls}}" wx:key='index'>
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" />
+    </swiper-item>
+  </block>
+</swiper>
+
+
+<!-- 
+横向滑动
+ -->
+<scroll-view class='scrollContanier' scroll-x='true'>
+  <view class='container-cat' bindtap="TofruitList">
+    <image src='/resources/png/shuiguopingguo.png'></image>
+  </view>
+  <view class='container-cat' bindtap="TocookieList">
+    <image src='/resources/png/lingshi.png'></image>
+  </view>
+  <view class='container-cat' bindtap="TowaterList">
+    <image src='/resources/png/yinliao.png'></image>
+  </view>
+  <view class='container-cat' bindtap="test">
+    <image src='/resources/png/game.png' alt='11' title=''></image>
+  </view>
+  <view class='container-cat' bindtap="test">
+    <image src='/resources/png/shoubing.png' alt='11' title=''></image>
+  </view>
+</scroll-view>
+
+
+<!-- 
+各部分精选
+ -->
+<view class='catalog'>
+  <text>-------水果精选-------</text>
+</view>
+<view class='showContainer'>
+  <view class='singleContainer special'>
+    <image src='/resources/png/apple.jpg'></image>
+    <br/>
+    <text>阿克苏苹果</text>
+  </view>
+  <view class='singleContainer special'>
+    <image src='/resources/png/berry.jpg'></image>
+    <text>樱桃</text>
+  </view>
+</view>
+
+<view class='catalog'>
+  <text>-------桌游精选-------</text>
+</view>
+<view class='showContainer'>
+  <view class='singleContainer'>
+    <image src='/resources/dalaoban.jpg'></image>
+    <text>我是大老板</text>
+  </view>
+  <view class='singleContainer'>
+    <image src='/resources/sanguosha.jpeg'></image>
+    <text>三国杀</text>
+  </view>
+  <view class='singleContainer'>
+    <image src='/resources/dafuweng.jpg'></image>
+    <text>大富翁</text>
+  </view>
+</view>
+
+<view class='catalog'>
+  <text>-------电玩精选-------</text>
+</view>
+<view class='showContainer'>
+  <view class='singleContainer special'>
+    <image src='/resources/switch2.jpg'></image>
+    <text>SWITCH</text>
+  </view>
+  <view class='singleContainer special'>
+    <image src='/resources/ps4.jpg'></image>
+    <text>PS4</text>
+  </view>
+</view>

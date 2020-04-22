@@ -1,0 +1,4 @@
+<!--pages/fruit-detail/detail.wxml-->
+<text>{{item.kind}}</text>
+<text>{{item.type}}</text>
+<text>{{item.price}}</text>

@@ -1,3 +1,22 @@
 <view>
-  tiejia
+  <button open-type='getUserInfo'  wx:if="{{login}}" bindgetuserinfo="onGotUserInfo" type='primary' size='mini'>登录</button>
+
+  <view class="private" wx:if="{{userinfo}}">
+    <view class='image-wrapper'>
+      <image src='{{userinfo.avatarUrl}}'></image>
+    </view>
+
+    <view class='information'>
+      <text>用户名：{{userinfo.nickName}}</text>
+      <text>性别：{{userinfo.gender}}</text>
+      <text>喜好：</text><input></input>
+      <text>地址：</text><input></input>
+      <view class='save'>
+        <button size='mini'>提交保存</button>
+      </view>
+    </view>
+    
+  </view>
+  
+  
 </view>

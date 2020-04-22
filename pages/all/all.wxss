@@ -1,1 +1,26 @@
-
+.container{
+  margin:0;
+  padding:0;
+  width:100%;
+}
+picker{
+  display:inline-block;
+}
+.content{
+  display:flex;
+  height:350rpx;
+  margin-bottom:8
+}
+.img{
+  flex:1;
+  height:100%;
+}
+.desc{
+  font-size:14px;
+  flex:1;
+  padding:10px;
+  
+}
+.desc text{
+  display:block;
+}

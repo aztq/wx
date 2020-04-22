@@ -1,1 +1,11 @@
-
+<view class='container'>
+  <view class='content' wx:for='{{content}}' wx:key="index">
+    <image class='img' src='{{item.src}}'></image>
+    <view class='desc'>
+      <text>品种:{{item.kind}}</text>
+      <text>生产地:{{item.type}}</text>
+      <text>价格:{{item.price}}</text>
+      <text>简介:{{item.desc}}</text>
+    </view>
+  </view>
+</view>

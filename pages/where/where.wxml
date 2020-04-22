@@ -1,12 +1,36 @@
 <view class="container">
-  <map
-  id="map"
-  longitude="{{longitude}}"
-  latitude="{{latitude}}"
-  scale="18"
-  controls="{{controls}}"
-  bindcontroltap='reset'
-  polyline="{{polyline}}"
-  show-location>
-  </map>
+  <view class='textDesc'>
+    <label>吃喝</label>
+  </view>
+  <view class='pic'>
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}">
+      <block wx:for="{{imgUrls}}" wx:key='index'>
+        <swiper-item>
+          <image src="{{item}}" class="slide-image"/>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <text bindtap='showLocation'>位置：上海市闵行区浦江镇 塘口公交车站附近</text>
+</view>
+
+
+<!-->latitude: 31.087, longitude: 121.475448<-->
+
+
+
+<view class="container">
+  <view class='textDesc'>
+    <label>玩乐</label>
+  </view>
+  <view class='pic'>
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}">
+      <block wx:for="{{imgUrls}}" wx:key='index'>
+        <swiper-item>
+          <image src="{{item}}" class="slide-image" height="250"/>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <text bindtap='showLocation'>位置：还在考虑买下哪里</text>
 </view>

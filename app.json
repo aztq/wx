@@ -1,45 +1,48 @@
 {
-  "pages":[
+  "cloud":true,
+  "pages": [
+    
+    "pages/second/index/index",
+    "pages/second/board/board",
+    "pages/second/fruitList/fruitList",
+    "pages/second/cookieList/cookieList",
+    "pages/second/waterList/waterList",
+
     "pages/index/index",
     "pages/all/all",
-    "pages/where/where",
-    "pages/love/love"
+    "pages/love/love",
+    "pages/fruit-detail/detail",
+    "pages/where/location/location",
+    "pages/where/where"
   ],
   "tabBar": {
+    
     "list": [
-      { "iconPath":"resources/recommend.png",
+      {
+        "iconPath": "resources/recommend.png",
         "selectedIconPath": "resources/recommend.png",
-        "pagePath": "pages/index/index",
-        "text": "当季推荐" 
-      },
-      {"iconPath": "resources/list.png",
-      "selectedIconPath": "resources/list.png",
-        "pagePath": "pages/all/all",
-        "text": "全部列表"
-      },
-      {"iconPath": "resources/location.png",
-      "selectedIconPath": "resources/location.png",
-        "pagePath": "pages/where/where",
-        "text": "位置"
+        "pagePath": "pages/second/index/index",
+        "text": "门面"
       },
       {
-        "iconPath": "resources/favourite.png",
-        "selectedIconPath": "resources/favourite.png",
-        "pagePath": "pages/love/love",
-        "text": "love"
+        "iconPath": "resources/location.png",
+        "selectedIconPath": "resources/location.png",
+        "pagePath": "pages/where/where",
+        "text": "地址"
       }
     ],
     "selectedColor": "#ff0033"
   },
-  "window":{
-    "backgroundTextStyle":"dark",
+  "window": {
+    "backgroundTextStyle": "dark",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "水果小店",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle": "black"
   },
   "permission": {
     "scope.userLocation": {
       "desc": "你的位置信息将用于小程序位置接口的效果展示"
     }
-  }
+  },
+  "sitemapLocation": "sitemap.json"
 }

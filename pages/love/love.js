@@ -4,7 +4,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-    
+    userinfo:"",
+    login:true
   },
 
   /**
@@ -20,7 +21,13 @@ Page({
   onReady: function () {
     
   },
-
+  onGotUserInfo(res){
+    console.log(res.detail)
+    this.setData({
+      userinfo: res.detail.userInfo,
+      login:false
+    })
+  },
   /**
    * 生命周期函数--监听页面显示
    */
